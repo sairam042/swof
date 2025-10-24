@@ -8,8 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/swfo',
-    build: {
-    outDir: 'dist',
-  }
+  base: '/swof/',
 })
