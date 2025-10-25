@@ -1,6 +1,6 @@
 {
   "name": "swof",
-  "homepage": "https://github.com/sairam042/swof.git",
+  "homepage": "https://sairam042.github.io/swof-social/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,12 +10,13 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && xcopy /E /I /Y dist\\* . && git add . && git commit -m \"Deploy\" && git push origin main"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.1.15",
     "framer-motion": "^12.23.24",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.15"
